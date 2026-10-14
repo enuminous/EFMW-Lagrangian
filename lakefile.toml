@@ -1,0 +1,6 @@
+name = "efmw-lagrangian-audit"
+version = "0.1.0"
+defaultTargets = ["EFMWLagrangian"]
+
+[[lean_lib]]
+name = "EFMWLagrangian"
