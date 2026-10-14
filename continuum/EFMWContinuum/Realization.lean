@@ -7,6 +7,8 @@ import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.Convert
 
 /-! Real semantics for the unchanged finite C1 polynomial syntax. -/
+noncomputable section
+
 namespace EFMWContinuum
 open EFMWLagrangian
 
@@ -133,19 +135,19 @@ theorem monomial_hasDerivAt (values : Nat → ℝ) (v : Nat) (m : List Nat) :
 /-- Formal differentiation agrees with ordinary real differentiation, without a bridge axiom. -/
 theorem realValue_hasDerivAt (values : Nat → ℝ) (v : Nat) (p : Poly) :
     HasDerivAt (fun x : ℝ => realValue (Function.update values v x) p)
-      (realValue values (deriv v p)) (values v) := by
+      (realValue values (EFMWLagrangian.deriv v p)) (values v) := by
   induction p with
-  | nil => simpa [deriv] using hasDerivAt_const (values v) (0 : ℝ)
+  | nil => simpa [EFMWLagrangian.deriv] using hasDerivAt_const (values v) (0 : ℝ)
   | cons t p ih =>
     have ht := (monomial_hasDerivAt values v t.2).const_mul (t.1 : ℝ)
-    simpa [realValue, termValue, deriv, derivTerm, Int.cast_mul, mul_assoc] using ht.add ih
+    simpa [realValue, termValue, EFMWLagrangian.deriv, derivTerm, Int.cast_mul, mul_assoc] using ht.add ih
 
 /-- A certified doubled C1 potential has the advertised derivative after undoing doubling. -/
 theorem certified_potential_hasDerivAt (p q : Poly) (v : Nat)
-    (h : normalize (deriv v p) = normalize q) (values : Nat → ℝ) :
+    (h : normalize (EFMWLagrangian.deriv v p) = normalize q) (values : Nat → ℝ) :
     HasDerivAt (fun x : ℝ => realValue (Function.update values v x) p / 2)
       (realValue values q / 2) (values v) := by
   have hd := (realValue_hasDerivAt values v p).div_const 2
-  rwa [certificate_real_equality (deriv v p) q h values] at hd
+  rwa [certificate_real_equality (EFMWLagrangian.deriv v p) q h values] at hd
 
 end EFMWContinuum
