@@ -1,0 +1,21 @@
+test_all_360_scalar_derivatives (test_audit.AuditTests.test_all_360_scalar_derivatives) ... ok
+test_all_scalar_sign_failures_are_nonvacuous (test_audit.AuditTests.test_all_scalar_sign_failures_are_nonvacuous) ... ok
+test_dimensions_of_all_potential_monomials (test_audit.AuditTests.test_dimensions_of_all_potential_monomials) ... ok
+test_exact_source_blobs (test_audit.AuditTests.test_exact_source_blobs) ... ok
+test_exhaustive_coverage (test_audit.AuditTests.test_exhaustive_coverage) ... ok
+test_flat_bianchi_commuting_partial_derivatives (test_audit.AuditTests.test_flat_bianchi_commuting_partial_derivatives) ... ok
+test_gauge_variation_factor_four (test_audit.AuditTests.test_gauge_variation_factor_four) ... ok
+test_missing_mixed_term_is_detected (test_audit.AuditTests.test_missing_mixed_term_is_detected) ... ok
+test_neutral_current_not_conserved (test_audit.AuditTests.test_neutral_current_not_conserved) ... ok
+test_nonreciprocal_source_counterexample (test_audit.AuditTests.test_nonreciprocal_source_counterexample) ... ok
+test_parser_rejects_unrecognized_physics (test_audit.AuditTests.test_parser_rejects_unrecognized_physics) ... ok
+test_reciprocity_for_all_active_scalar_pairs (test_audit.AuditTests.test_reciprocity_for_all_active_scalar_pairs) ... ok
+test_root_euler_lagrange_identity (test_audit.AuditTests.test_root_euler_lagrange_identity) ... ok
+test_self_dependent_source_has_extra_variation (test_audit.AuditTests.test_self_dependent_source_has_extra_variation) ... ok
+test_wrong_factor_is_detected (test_audit.AuditTests.test_wrong_factor_is_detected) ... ok
+test_zero_coupling_limit (test_audit.AuditTests.test_zero_coupling_limit) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.186s
+
+OK

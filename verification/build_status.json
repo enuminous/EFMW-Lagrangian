@@ -1,0 +1,79 @@
+{
+  "candidate": "EFMW-LAGRANGIAN-C1",
+  "started_utc": "2026-10-14T01:12:12.785425+00:00",
+  "launcher": "Lean 4.28.0 upstream frontend and kernel libraries, explicit-path C launcher; standard launcher blocked by numeric /proc executable-path lookup. No kernel or proof-rule changes.",
+  "stages": [
+    {
+      "name": "candidate_lock",
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "candidate_lock.log"
+    },
+    {
+      "name": "audit",
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "audit.log"
+    },
+    {
+      "name": "python_tests",
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "python_tests.log"
+    },
+    {
+      "name": "lean_version",
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "lean_version.log"
+    },
+    {
+      "name": "lean_build",
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "lean_build.log"
+    },
+    {
+      "name": "axiom_audit",
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "axiom_audit.log"
+    },
+    {
+      "name": "leanchecker",
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "leanchecker.log"
+    },
+    {
+      "name": "negative_checks",
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "negative_checks.log"
+    }
+  ],
+  "overall": "PASS",
+  "formal_scope": "Finite integer-polynomial derivative and mismatch certificates; not continuum physics or a PDE existence proof.",
+  "safe_declarations": 2024,
+  "theorem_declarations": 1467,
+  "completed_utc": "2026-10-14T01:12:38.727518+00:00",
+  "source_hashes": {
+    "Audit.lean": "1c90d2e234c238a9f3cfe11c36449587d1fe4255c1af6fb3e2395fc7c68db8fa",
+    "EFMWLagrangian.lean": "358c9fe46a9814b4dd7dd5dc549728ee0ad0babae84d5ea3784ae6137e92f729",
+    "EFMWLagrangian/Core.lean": "c31d59c5393500e269f2ba542f7eef60c017aabb80ffc21f30db5b9f12baa26b",
+    "EFMWLagrangian/Generated/Chunk00.lean": "9271b32ae6219c6f998f67fe73f078ccc09eafb9a5eddefb6f098da5c924c29d",
+    "EFMWLagrangian/Generated/Chunk01.lean": "8429b72139051ff7065fd49e57f84320396b82950ec8ec557e6aeb20bd6e31a1",
+    "EFMWLagrangian/Generated/Chunk02.lean": "9602670faffc699f0175bca4d153e65380476af1d0916bc87e0713d34f78862b",
+    "EFMWLagrangian/Generated/Chunk03.lean": "fb772fee94df7f6c632f4205b0078700689dfa6324a5256672e19c7e8740755e",
+    "EFMWLagrangian/Generated/Chunk04.lean": "55571166e08c53ff7030d1a3f68076469bac6e3a2fddf799b6f02e6d91c1b008",
+    "EFMWLagrangian/Generated/Chunk05.lean": "625e996d5b6ff2783295ddf2673e982b7e91adfa56c81eb003d532105a1d7a91",
+    "EFMWLagrangian/Generated/Chunk06.lean": "f2b3c732caa1fc83d83b15ccb769cc594f28676b1326617ca2a759b73117b595",
+    "EFMWLagrangian/Generated/Chunk07.lean": "7a8ee23d1309dc4628e39d01c0e6727ebe49920c2f42291fd521f6ba7d5f49fa",
+    "EFMWLagrangian/Generated/Chunk08.lean": "33b2b7449e7356bf18fd72d30f1d69c62bb072011c4f7383cc55d8b810f2ff7f",
+    "EFMWLagrangian/Generated/Chunk09.lean": "675752532f60ab141229ff5479e1555ba1d53b917025bd34b0a72e56fdc36d21",
+    "EFMWLagrangian/Generated/Chunk10.lean": "7b19a2104323093441c9366b1bcd8695f972bf610618780daddf43bded671040",
+    "EFMWLagrangian/Generated/Chunk11.lean": "a74c75bbf75482de8bfa564488f0fd02597d5c1b57042ba31ebbbea39a9f817c",
+    "EFMWLagrangian/Generated/Chunk12.lean": "2f8fcee18e07045450494e08ed1bf67cb3a8fa6374f8f870a3c81c0244e49e66",
+    "EFMWLagrangian/Generated/Chunk13.lean": "cd8c145d964bcd28435c72155a5af5aecd579be531c01a008585e27b421d57bf"
+  }
+}

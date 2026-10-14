@@ -1,0 +1,42 @@
+{
+  "candidate": "EFMW-LAGRANGIAN-C1",
+  "source_triplets": 165,
+  "displayed_statements": 585,
+  "counts_by_kind": {
+    "gravity": 45,
+    "gauge": 90,
+    "bianchi": 90,
+    "scalar": 360
+  },
+  "literal_status_counts": {
+    "UNDERDEFINED_STRESS": 45,
+    "FAIL_NEUTRAL_SCALAR_CURRENT": 88,
+    "INDEX_REPAIR_REQUIRED": 90,
+    "FAIL_SIGN": 360,
+    "UNDERDEFINED_CURRENT": 2
+  },
+  "normalized_status_counts": {
+    "CONDITIONAL_STRESS_IDENTIFICATION": 45,
+    "REPLACE_WITH_VARIATIONAL_GAUGE_EQUATION": 90,
+    "IDENTITY_AFTER_INDEX_REPAIR": 90,
+    "MATCH_UNDER_DECLARED_REPAIRS": 360
+  },
+  "scalar_derivative_checks": 360,
+  "scalar_derivative_magnitude_mismatches": 0,
+  "sector_incidence": {
+    "E": 45,
+    "M": 45,
+    "S": 45,
+    "F": 45,
+    "W": 45,
+    "T": 45,
+    "I": 45,
+    "R": 45,
+    "H": 45,
+    "P": 45,
+    "A": 45
+  },
+  "lean_status": "See verification/build_status.json; generation is not a Lean build.",
+  "physical_validity": "unestablished",
+  "source_equivalence": "not established; literal mismatches retained"
+}

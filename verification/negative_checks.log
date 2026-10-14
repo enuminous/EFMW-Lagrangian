@@ -1,0 +1,5 @@
+PASS: guard rejected public axiom; expected dependency auditProbe.
+PASS: guard rejected private axiom; expected dependency auditProbe.
+PASS: guard rejected placeholder; expected dependency sorryAx.
+PASS: guard rejected native proof; expected dependency Lean.ofReduceBool.
+PASS: kernel rejected deliberately incorrect square derivative.
