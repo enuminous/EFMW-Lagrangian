@@ -4,6 +4,7 @@
 |---|---|---|
 | Coverage of frozen catalogue | Demonstrated computationally | 165 unique blocks, all 585 statements; fail-closed parser |
 | Scalar polynomial variation | Demonstrated in finite formal model | 360 kernel-checked magnitude identities; signs separately fail |
+| Real polynomial semantics and scalar continuum bridge | Formalized with explicit hypotheses in `continuum/` | Normalizer soundness, real derivatives, flat-spacetime action variation, and stationarity-to-scalar-PDE; see CONTINUUM_BRIDGE.md |
 | Literal equivalence of full catalogue | Rejected as an identity claim under C1 conventions | Sign, current and tensor mismatches; degenerate parameter choices may make some discrepancies vanish |
 | Free scalar kinetic sign | Correct at canonical free limit | (-+++) kinetic term gives positive time kinetic energy |
 | Free scalar dispersion | Correct for nonnegative mass squared | omega^2 = k^2 + m^2 |
@@ -13,7 +14,7 @@
 | Gauge invariance | Demonstrated at action-expression level | Potentials enter only through F=dA and H=dB; gamma and real-scalar current insertions excluded |
 | Current matching to original | Rejected / underdefined | 88 incompatible neutral-scalar current expressions, 2 unresolved-current equations |
 | Stress conservation | Analytic on-shell identity | Closed covariant action and all field equations; no separately prescribed source hidden in C1 |
-| Full curved-space variational proof in Lean | Open | Lean currently checks finite polynomial algebra, not manifolds or integration by parts |
+| Full curved-space variational proof in Lean | Open | The new scalar bridge uses real analysis and integration by parts on fixed Minkowski spacetime; curved metric/gauge variation remains open |
 | Boundary problem / well-posedness | Open | Only compactly supported variation is used; no global PDE existence/uniqueness claim |
 | Rotational source P | Underdefined physically | Need local invariant, dimensions, dynamical variables, measurement and backreaction |
 | Empirical status | Unestablished | No new experiment or parameter fit is contained in this package |

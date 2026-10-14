@@ -129,8 +129,7 @@ theorem monomial_hasDerivAt (values : Nat → ℝ) (v : Nat) (m : List Nat) :
     · have hd := (hasDerivAt_const (values v) (values a)).mul ih
       convert hd using 1
       · ext x; simp [Function.update_of_ne h]
-      · simp [List.count_cons, h, Ne.symm h, List.erase_cons_tail,
-          Function.update_eq_self, mul_assoc, mul_left_comm]
+      · simp [h, List.erase_cons_tail, Function.update_eq_self, mul_left_comm]
 
 /-- Formal differentiation agrees with ordinary real differentiation, without a bridge axiom. -/
 theorem realValue_hasDerivAt (values : Nat → ℝ) (v : Nat) (p : Poly) :

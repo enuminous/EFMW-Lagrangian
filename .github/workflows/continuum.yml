@@ -87,7 +87,7 @@ jobs:
         run: lake env lean Audit.lean 2>&1 | tee verification/axioms.log
       - name: Recheck compiled bridge proofs
         working-directory: continuum
-        run: lake env leanchecker -v EFMWContinuum 2>&1 | tee verification/leanchecker.log
+        run: python3 recheck.py 2>&1 | tee verification/leanchecker.log
       - name: Reject invalid derivative and forbidden-axiom probes
         working-directory: continuum
         run: python3 negative_checks.py 2>&1 | tee verification/negative_checks.log

@@ -1,6 +1,6 @@
 # What Lean proves, and what it does not
 
-The package uses **Lean 4.28.0**, `Std`, and no Mathlib or external Lean dependencies.
+The original finite package uses **Lean 4.28.0**, `Std`, and no external Lean dependencies. The separate `continuum/` package pins Mathlib v4.28.0 and adds the [real and scalar continuum bridge](CONTINUUM_BRIDGE.md). These layers have separate verification workflows.
 
 ## Certificate surface
 
@@ -17,14 +17,14 @@ There are **720 scalar certificates**, plus the explicitly named support theorem
 
 The proof checker verifies the emitted finite polynomial propositions. The Python parser and the correspondence from source strings to those propositions are **not formalized in Lean**. Exact source-blob checks, independent action generation, deterministic regeneration, mutation tests, and line-level records make that boundary auditable. They do not erase it.
 
-The formal polynomial derivative is defined by the usual monomial power rule. The current Lean layer checks concrete results of that algorithm; it does not prove a general bridge from this syntax to real differentiability. It also does not prove the complete polynomial-normalizer semantics over every ring. The normalized equality and mismatch objects are directly kernel-reduced finite integer/list data.
+The original finite layer checks concrete results of the formal monomial power rule. The new continuum layer additionally proves, for arbitrary polynomial lists and real valuations, that the original normalizer preserves evaluation and the original formal derivative agrees with an ordinary real derivative. This is a real-valued semantic bridge; it is not a normalizer theorem over every ring. The source-text parser remains outside the formalization.
 
-The root scalar algebra, sign incompatibility, reciprocal monomial examples and finite catalogue counts have support theorems. These are narrowly stated. A theorem about integer source algebra is not a theorem about solutions of a real spacetime PDE.
+The root scalar algebra, sign incompatibility, reciprocal monomial examples and finite catalogue counts have support theorems. The new scalar action theorem derives the Minkowski Euler–Lagrange residual using actual real differentiation and integration by parts. Its stationarity-to-PDE implication requires explicit differentiability, integrability, domination, and test-function hypotheses. It does not establish the existence of a solution or automatically discharge those hypotheses for arbitrary fields.
 
 ## Not currently formalized
 
-- Smooth Lorentzian manifolds, tensor bundles, field spaces or functional derivatives.
-- Integration by parts, compact-support boundary lemmas or Einstein–Hilbert variation.
+- Smooth curved Lorentzian manifolds, tensor bundles, or the complete coupled field-space variational calculus.
+- Curved-space integration by parts, physical finite-boundary terms, or Einstein–Hilbert variation.
 - The curved-space Bianchi identity, Noether's theorem, or nonlinear hyperbolicity.
 - Global energy positivity, existence/uniqueness of solutions, renormalization or quantum gravity.
 - Physical meanings of field labels, rotational source P, observer dynamics or experimental validity.

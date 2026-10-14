@@ -14,7 +14,7 @@ noncomputable section
 
 namespace EFMWContinuum
 open EFMWLagrangian MeasureTheory Filter
-open scoped BigOperators Topology
+open scoped BigOperators Topology ContDiff
 
 abbrev Spacetime := Fin 4 → ℝ
 def signature (i : Fin 4) : ℝ := if i = 0 then -1 else 1
@@ -42,23 +42,23 @@ theorem densityAlong_hasDerivAt (p q : Poly) (v : Nat)
     HasDerivAt (densityAlong p v values jet deltaJet eta)
       (variationDensity (realValue values q / 2) jet deltaJet eta) 0 := by
   have ha i : HasDerivAt (fun e : ℝ => jet i + e * deltaJet i) (deltaJet i) 0 := by
-    simpa using (hasDerivAt_const 0 (jet i)).add ((hasDerivAt_id 0).mul_const (deltaJet i))
+    simpa only [one_mul, zero_add] using
+      (hasDerivAt_const 0 (jet i)).add ((hasDerivAt_id 0).mul_const (deltaJet i))
   have hk := HasDerivAt.fun_sum (u := Finset.univ) (fun i _ =>
     ((ha i).mul (ha i)).const_mul (signature i))
   have hv := (certified_potential_hasDerivAt p q v h values).comp_of_eq 0
     ((hasDerivAt_const 0 (values v)).add ((hasDerivAt_id 0).mul_const eta)) (by simp)
   convert ((hk.neg.div_const 2).sub hv) using 1
-  · rfl
-  · simp only [variationDensity, zero_mul, add_zero, one_mul, zero_add]
-    have hs : (∑ i : Fin 4, signature i *
-        (deltaJet i * jet i + jet i * deltaJet i)) =
-        -2 * ∑ i : Fin 4, -signature i * (jet i * deltaJet i) := by
-      rw [Finset.mul_sum]
-      apply Finset.sum_congr rfl
-      intro i _
-      ring
-    rw [hs]
+  simp only [variationDensity, zero_mul, add_zero, one_mul, zero_add]
+  have hs : (∑ i : Fin 4, signature i *
+      (deltaJet i * jet i + jet i * deltaJet i)) =
+      -2 * ∑ i : Fin 4, -signature i * (jet i * deltaJet i) := by
+    rw [Finset.mul_sum]
+    apply Finset.sum_congr rfl
+    intro i _
     ring
+  rw [hs]
+  ring
 
 theorem partial_variation (phi eta : Spacetime → ℝ)
     (hphi : Differentiable ℝ phi) (heta : Differentiable ℝ eta)
@@ -163,7 +163,7 @@ theorem actionAlong_hasDerivAt (p q : Poly) (v : Nat)
 /-- Stationarity against every smooth compactly supported test forces the scalar PDE a.e. -/
 theorem stationary_action_implies_scalar_equation (p q : Poly) (v : Nat)
     (hcert : normalize (EFMWLagrangian.deriv v p) = normalize q) (values : Spacetime → Nat → ℝ)
-    (hlocal : LocallyIntegrable (fun x => dalembertian (fun y => values y v) x - realValue (values x) q / 2))
+    (hlocal : LocallyIntegrable (fun x => dalembertian (fun y => values y v) x - realValue (values x) q / 2) volume)
     (hadmissible : ∀ eta : Spacetime → ℝ, ContDiff ℝ ∞ eta → HasCompactSupport eta →
       Nonempty (DominatedVariation p q v values eta) ∧
         IBPConditions (fun x => values x v) eta (fun x => realValue (values x) q / 2))
@@ -179,7 +179,7 @@ theorem stationary_action_implies_scalar_equation (p q : Poly) (v : Nat)
 /-- For a continuous residual, the almost-everywhere equation holds at every spacetime point. -/
 theorem continuous_residual_eq_zero (residual : Spacetime → ℝ)
     (hc : Continuous residual) (hae : ∀ᵐ x, residual x = 0) : ∀ x, residual x = 0 := by
-  have h : residual = fun _ => (0 : ℝ) := MeasureTheory.eq_of_ae_eq hae hc continuous_const
+  have h : residual = fun _ => (0 : ℝ) := MeasureTheory.Measure.eq_of_ae_eq hae hc continuous_const
   exact fun x => congrFun h x
 
 end EFMWContinuum

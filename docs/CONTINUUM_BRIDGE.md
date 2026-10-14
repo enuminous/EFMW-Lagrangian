@@ -61,10 +61,10 @@ cd continuum
 lake exe cache get
 lake build
 lake env lean Audit.lean
-lake env leanchecker -v EFMWContinuum
+python3 recheck.py
 python3 negative_checks.py
 ```
 
 The [continuum workflow](../.github/workflows/continuum.yml) uses the standard upstream launcher on GitHub-hosted Ubuntu. It verifies the C1 lock, checks deterministic regeneration, builds the new proofs, audits all their transitive axioms, rechecks compiled bridge modules, and runs rejection tests. Only `propext`, `Classical.choice`, and `Quot.sound` are allowed as transitive axioms. Custom axioms, `sorryAx`, and native reduction oracles must be rejected.
 
-Mathlib's upstream compiled dependency cache is used for build practicality. `leanchecker` replays the project's bridge modules against their imported environment; it is not a different proof kernel and does not re-prove every imported Mathlib module from scratch. The original finite workflow remains separate. CI logs identify the exact checked-out commit and are retained as artifacts for 90 days.
+Mathlib's upstream compiled dependency cache is used for build practicality. `recheck.py` invokes the standard `leanchecker` separately for every bridge module with declarations and verifies that the root contains only imports. Sequential processes bound memory use: the namespace-wide checker launches all modules concurrently and exhausted the local 8 GiB limit. `leanchecker` replays the project's bridge modules against their imported environment; it is not a different proof kernel and does not re-prove every imported Mathlib module from scratch. The original finite workflow remains separate. CI logs identify the exact checked-out commit and are retained as artifacts for 90 days.

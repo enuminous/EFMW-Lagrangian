@@ -8,7 +8,7 @@ This project derives and audits a proposed effective Lagrangian for the 11-secto
 
 **Result:** all **360 scalar interaction magnitudes** match independently differentiated candidate potentials under explicit reciprocity and curvature identifications. The source equations' potential signs differ under the frozen (-+++) convention. The original gauge currents and gravitational placeholders do not establish complete equivalence.
 
-The included verification record distinguishes successful finite Lean proofs from unproved continuum and physical claims. Open **[index.html](index.html)** for an offline searchable dashboard.
+The original audit and a separate [scalar continuum bridge](docs/CONTINUUM_BRIDGE.md) distinguish finite certificates, real-analysis theorems with explicit hypotheses, and unresolved physical claims. Open **[index.html](index.html)** for an offline searchable dashboard.
 
 ## Start here
 
@@ -16,6 +16,8 @@ The included verification record distinguishes successful finite Lean proofs fro
 - [Exact convention file](candidate/conventions.json) and [definition lock](candidate/FREEZE.json)
 - [Full audit](audit/FULL_AUDIT.md)
 - [Continuum derivation](docs/DERIVATION.md)
+- [Formal real and scalar continuum bridge](docs/CONTINUUM_BRIDGE.md)
+- [Continuum bridge CI](https://github.com/enuminous/EFMW-Lagrangian/actions/workflows/continuum.yml)
 - [What Lean proves](docs/FORMAL_SCOPE.md)
 - [Physical obligations and counterexamples](docs/PHYSICAL_OBLIGATIONS.md)
 - [GitHub verification runs](https://github.com/enuminous/EFMW-Lagrangian/actions/workflows/verify.yml)
@@ -63,7 +65,9 @@ The original authoring environment required an explicit-path launcher for Lean's
 
 There are **720 explicit scalar certificates**: one derivative-magnitude identity and one original-sign nonidentity for each scalar statement. Core.lean supplies additional narrow support theorems. Counts in the axiom log include compiler-generated equation lemmas and should not be interpreted as independent physical theorems.
 
-Lean checks finite formal polynomials. The source parser, continuum variational calculus, general stability and physical interpretation are not fully formalized. The package does not prove the original 585 equations, a new force, or physical EFMW as a theory of nature.
+The separate `continuum/` package proves real semantics for the polynomial normalizer, ordinary real derivative correctness, and a flat-spacetime scalar action variation under explicit analytic hypotheses. All 360 scalar magnitude certificates are instantiated in that bridge. Stationarity against admissible smooth compactly supported tests implies the scalar equation almost everywhere; a continuous residual gives the pointwise equation. See [the exact theorem chain and assumptions](docs/CONTINUUM_BRIDGE.md).
+
+The source parser, curved metric/gauge variation, general stability, PDE existence, and physical interpretation remain outside that result. The package does not prove the original 585 equations, a new force, or physical EFMW as a theory of nature.
 
 ## GitHub use
 
