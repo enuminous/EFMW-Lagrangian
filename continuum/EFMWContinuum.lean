@@ -1,0 +1,15 @@
+import EFMWContinuum.ScalarVariation
+import EFMWContinuum.Generated.Chunk00
+import EFMWContinuum.Generated.Chunk01
+import EFMWContinuum.Generated.Chunk02
+import EFMWContinuum.Generated.Chunk03
+import EFMWContinuum.Generated.Chunk04
+import EFMWContinuum.Generated.Chunk05
+import EFMWContinuum.Generated.Chunk06
+import EFMWContinuum.Generated.Chunk07
+import EFMWContinuum.Generated.Chunk08
+import EFMWContinuum.Generated.Chunk09
+import EFMWContinuum.Generated.Chunk10
+import EFMWContinuum.Generated.Chunk11
+import EFMWContinuum.Generated.Chunk12
+import EFMWContinuum.Generated.Chunk13
