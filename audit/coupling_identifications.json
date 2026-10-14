@@ -1,0 +1,874 @@
+{
+  "g_E_A": [
+    "λ_AE"
+  ],
+  "g_E_F": [
+    "λ_FE"
+  ],
+  "g_E_H": [
+    "λ_HE"
+  ],
+  "g_E_I": [
+    "λ_IE"
+  ],
+  "g_E_P": [
+    "λ_PE"
+  ],
+  "g_E_R": [
+    "λ_RE"
+  ],
+  "g_E_T": [
+    "λ_TE"
+  ],
+  "g_E_W": [
+    "λ_WE"
+  ],
+  "g_F_A": [
+    "λ_AF",
+    "λ_FA"
+  ],
+  "g_F_H": [
+    "λ_FH",
+    "λ_HF"
+  ],
+  "g_F_I": [
+    "λ_FI",
+    "λ_IF"
+  ],
+  "g_F_P": [
+    "λ_FP",
+    "λ_PF"
+  ],
+  "g_F_R": [
+    "λ_FR",
+    "λ_RF"
+  ],
+  "g_F_T": [
+    "λ_FT",
+    "λ_TF"
+  ],
+  "g_F_W": [
+    "λ_FW",
+    "λ_WF"
+  ],
+  "g_H_A": [
+    "λ_AH",
+    "λ_HA"
+  ],
+  "g_H_P": [
+    "λ_HP",
+    "λ_PH"
+  ],
+  "g_I_A": [
+    "λ_AI",
+    "λ_IA"
+  ],
+  "g_I_H": [
+    "λ_HI",
+    "λ_IH"
+  ],
+  "g_I_P": [
+    "λ_IP",
+    "λ_PI"
+  ],
+  "g_I_R": [
+    "λ_IR",
+    "λ_RI"
+  ],
+  "g_M_A": [
+    "λ_AM"
+  ],
+  "g_M_F": [
+    "λ_FM"
+  ],
+  "g_M_H": [
+    "λ_HM"
+  ],
+  "g_M_I": [
+    "λ_IM"
+  ],
+  "g_M_P": [
+    "λ_PM"
+  ],
+  "g_M_R": [
+    "λ_RM"
+  ],
+  "g_M_T": [
+    "λ_TM"
+  ],
+  "g_M_W": [
+    "λ_WM"
+  ],
+  "g_P_A": [
+    "λ_AP",
+    "λ_PA"
+  ],
+  "g_R_A": [
+    "λ_AR",
+    "λ_RA"
+  ],
+  "g_R_H": [
+    "λ_HR",
+    "λ_RH"
+  ],
+  "g_R_P": [
+    "λ_PR",
+    "λ_RP"
+  ],
+  "g_S_A": [
+    "λ_AS"
+  ],
+  "g_S_F": [
+    "λ_FS"
+  ],
+  "g_S_H": [
+    "λ_HS"
+  ],
+  "g_S_I": [
+    "λ_IS"
+  ],
+  "g_S_P": [
+    "λ_PS"
+  ],
+  "g_S_R": [
+    "λ_RS"
+  ],
+  "g_S_T": [
+    "λ_TS"
+  ],
+  "g_S_W": [
+    "λ_WS"
+  ],
+  "g_T_A": [
+    "λ_AT",
+    "λ_TA"
+  ],
+  "g_T_H": [
+    "λ_HT",
+    "λ_TH"
+  ],
+  "g_T_I": [
+    "λ_IT",
+    "λ_TI"
+  ],
+  "g_T_P": [
+    "λ_PT",
+    "λ_TP"
+  ],
+  "g_T_R": [
+    "λ_RT",
+    "λ_TR"
+  ],
+  "g_W_A": [
+    "λ_AW",
+    "λ_WA"
+  ],
+  "g_W_H": [
+    "λ_HW",
+    "λ_WH"
+  ],
+  "g_W_I": [
+    "λ_IW",
+    "λ_WI"
+  ],
+  "g_W_P": [
+    "λ_PW",
+    "λ_WP"
+  ],
+  "g_W_R": [
+    "λ_RW",
+    "λ_WR"
+  ],
+  "g_W_T": [
+    "λ_TW",
+    "λ_WT"
+  ],
+  "h_E_F_A": [
+    "λ_AEF",
+    "λ_FEA"
+  ],
+  "h_E_F_H": [
+    "λ_FEH",
+    "λ_HEF"
+  ],
+  "h_E_F_I": [
+    "λ_FEI",
+    "λ_IEF"
+  ],
+  "h_E_F_P": [
+    "λ_FEP",
+    "λ_PEF"
+  ],
+  "h_E_F_R": [
+    "λ_FER",
+    "λ_REF"
+  ],
+  "h_E_F_T": [
+    "λ_FET",
+    "λ_TEF"
+  ],
+  "h_E_F_W": [
+    "λ_FEW",
+    "λ_WEF"
+  ],
+  "h_E_H_A": [
+    "λ_AEH",
+    "λ_HEA"
+  ],
+  "h_E_H_P": [
+    "λ_HEP",
+    "λ_PEH"
+  ],
+  "h_E_I_A": [
+    "λ_AEI",
+    "λ_IEA"
+  ],
+  "h_E_I_H": [
+    "λ_HEI",
+    "λ_IEH"
+  ],
+  "h_E_I_P": [
+    "λ_IEP",
+    "λ_PEI"
+  ],
+  "h_E_I_R": [
+    "λ_IER",
+    "λ_REI"
+  ],
+  "h_E_M_A": [
+    "λ_AEM"
+  ],
+  "h_E_M_F": [
+    "λ_FEM"
+  ],
+  "h_E_M_H": [
+    "λ_HEM"
+  ],
+  "h_E_M_I": [
+    "λ_IEM"
+  ],
+  "h_E_M_P": [
+    "λ_PEM"
+  ],
+  "h_E_M_R": [
+    "λ_REM"
+  ],
+  "h_E_M_T": [
+    "λ_TEM"
+  ],
+  "h_E_M_W": [
+    "λ_WEM"
+  ],
+  "h_E_P_A": [
+    "λ_AEP",
+    "λ_PEA"
+  ],
+  "h_E_R_A": [
+    "λ_AER",
+    "λ_REA"
+  ],
+  "h_E_R_H": [
+    "λ_HER",
+    "λ_REH"
+  ],
+  "h_E_R_P": [
+    "λ_PER",
+    "λ_REP"
+  ],
+  "h_E_S_A": [
+    "λ_AES"
+  ],
+  "h_E_S_F": [
+    "λ_FES"
+  ],
+  "h_E_S_H": [
+    "λ_HES"
+  ],
+  "h_E_S_I": [
+    "λ_IES"
+  ],
+  "h_E_S_P": [
+    "λ_PES"
+  ],
+  "h_E_S_R": [
+    "λ_RES"
+  ],
+  "h_E_S_T": [
+    "λ_TES"
+  ],
+  "h_E_S_W": [
+    "λ_WES"
+  ],
+  "h_E_T_A": [
+    "λ_AET",
+    "λ_TEA"
+  ],
+  "h_E_T_H": [
+    "λ_HET",
+    "λ_TEH"
+  ],
+  "h_E_T_I": [
+    "λ_IET",
+    "λ_TEI"
+  ],
+  "h_E_T_P": [
+    "λ_PET",
+    "λ_TEP"
+  ],
+  "h_E_T_R": [
+    "λ_RET",
+    "λ_TER"
+  ],
+  "h_E_W_A": [
+    "λ_AEW",
+    "λ_WEA"
+  ],
+  "h_E_W_H": [
+    "λ_HEW",
+    "λ_WEH"
+  ],
+  "h_E_W_I": [
+    "λ_IEW",
+    "λ_WEI"
+  ],
+  "h_E_W_P": [
+    "λ_PEW",
+    "λ_WEP"
+  ],
+  "h_E_W_R": [
+    "λ_REW",
+    "λ_WER"
+  ],
+  "h_E_W_T": [
+    "λ_TEW",
+    "λ_WET"
+  ],
+  "h_F_H_A": [
+    "λ_AFH",
+    "λ_FHA",
+    "λ_HFA"
+  ],
+  "h_F_H_P": [
+    "λ_FHP",
+    "λ_HFP",
+    "λ_PFH"
+  ],
+  "h_F_I_A": [
+    "λ_AFI",
+    "λ_FIA",
+    "λ_IFA"
+  ],
+  "h_F_I_H": [
+    "λ_FIH",
+    "λ_HFI",
+    "λ_IFH"
+  ],
+  "h_F_I_P": [
+    "λ_FIP",
+    "λ_IFP",
+    "λ_PFI"
+  ],
+  "h_F_I_R": [
+    "λ_FIR",
+    "λ_IFR",
+    "λ_RFI"
+  ],
+  "h_F_P_A": [
+    "λ_AFP",
+    "λ_FPA",
+    "λ_PFA"
+  ],
+  "h_F_R_A": [
+    "λ_AFR",
+    "λ_FRA",
+    "λ_RFA"
+  ],
+  "h_F_R_H": [
+    "λ_FRH",
+    "λ_HFR",
+    "λ_RFH"
+  ],
+  "h_F_R_P": [
+    "λ_FRP",
+    "λ_PFR",
+    "λ_RFP"
+  ],
+  "h_F_T_A": [
+    "λ_AFT",
+    "λ_FTA",
+    "λ_TFA"
+  ],
+  "h_F_T_H": [
+    "λ_FTH",
+    "λ_HFT",
+    "λ_TFH"
+  ],
+  "h_F_T_I": [
+    "λ_FTI",
+    "λ_IFT",
+    "λ_TFI"
+  ],
+  "h_F_T_P": [
+    "λ_FTP",
+    "λ_PFT",
+    "λ_TFP"
+  ],
+  "h_F_T_R": [
+    "λ_FTR",
+    "λ_RFT",
+    "λ_TFR"
+  ],
+  "h_F_W_A": [
+    "λ_AFW",
+    "λ_FWA",
+    "λ_WFA"
+  ],
+  "h_F_W_H": [
+    "λ_FWH",
+    "λ_HFW",
+    "λ_WFH"
+  ],
+  "h_F_W_I": [
+    "λ_FWI",
+    "λ_IFW",
+    "λ_WFI"
+  ],
+  "h_F_W_P": [
+    "λ_FWP",
+    "λ_PFW",
+    "λ_WFP"
+  ],
+  "h_F_W_R": [
+    "λ_FWR",
+    "λ_RFW",
+    "λ_WFR"
+  ],
+  "h_F_W_T": [
+    "λ_FWT",
+    "λ_TFW",
+    "λ_WFT"
+  ],
+  "h_H_P_A": [
+    "λ_AHP",
+    "λ_HPA",
+    "λ_PHA"
+  ],
+  "h_I_H_A": [
+    "λ_AIH",
+    "λ_HIA",
+    "λ_IHA"
+  ],
+  "h_I_H_P": [
+    "λ_HIP",
+    "λ_IHP",
+    "λ_PIH"
+  ],
+  "h_I_P_A": [
+    "λ_AIP",
+    "λ_IPA",
+    "λ_PIA"
+  ],
+  "h_I_R_A": [
+    "λ_AIR",
+    "λ_IRA",
+    "λ_RIA"
+  ],
+  "h_I_R_H": [
+    "λ_HIR",
+    "λ_IRH",
+    "λ_RIH"
+  ],
+  "h_I_R_P": [
+    "λ_IRP",
+    "λ_PIR",
+    "λ_RIP"
+  ],
+  "h_M_F_A": [
+    "λ_AFM",
+    "λ_FAM"
+  ],
+  "h_M_F_H": [
+    "λ_FHM",
+    "λ_HFM"
+  ],
+  "h_M_F_I": [
+    "λ_FIM",
+    "λ_IFM"
+  ],
+  "h_M_F_P": [
+    "λ_FPM",
+    "λ_PFM"
+  ],
+  "h_M_F_R": [
+    "λ_FRM",
+    "λ_RFM"
+  ],
+  "h_M_F_T": [
+    "λ_FTM",
+    "λ_TFM"
+  ],
+  "h_M_F_W": [
+    "λ_FWM",
+    "λ_WFM"
+  ],
+  "h_M_H_A": [
+    "λ_AHM",
+    "λ_HAM"
+  ],
+  "h_M_H_P": [
+    "λ_HPM",
+    "λ_PHM"
+  ],
+  "h_M_I_A": [
+    "λ_AIM",
+    "λ_IAM"
+  ],
+  "h_M_I_H": [
+    "λ_HIM",
+    "λ_IHM"
+  ],
+  "h_M_I_P": [
+    "λ_IPM",
+    "λ_PIM"
+  ],
+  "h_M_I_R": [
+    "λ_IRM",
+    "λ_RIM"
+  ],
+  "h_M_P_A": [
+    "λ_APM",
+    "λ_PAM"
+  ],
+  "h_M_R_A": [
+    "λ_ARM",
+    "λ_RAM"
+  ],
+  "h_M_R_H": [
+    "λ_HRM",
+    "λ_RHM"
+  ],
+  "h_M_R_P": [
+    "λ_PRM",
+    "λ_RPM"
+  ],
+  "h_M_S_A": [
+    "λ_AMS"
+  ],
+  "h_M_S_F": [
+    "λ_FMS"
+  ],
+  "h_M_S_H": [
+    "λ_HMS"
+  ],
+  "h_M_S_I": [
+    "λ_IMS"
+  ],
+  "h_M_S_P": [
+    "λ_PMS"
+  ],
+  "h_M_S_R": [
+    "λ_RMS"
+  ],
+  "h_M_S_T": [
+    "λ_TMS"
+  ],
+  "h_M_S_W": [
+    "λ_WMS"
+  ],
+  "h_M_T_A": [
+    "λ_ATM",
+    "λ_TAM"
+  ],
+  "h_M_T_H": [
+    "λ_HTM",
+    "λ_THM"
+  ],
+  "h_M_T_I": [
+    "λ_ITM",
+    "λ_TIM"
+  ],
+  "h_M_T_P": [
+    "λ_PTM",
+    "λ_TPM"
+  ],
+  "h_M_T_R": [
+    "λ_RTM",
+    "λ_TRM"
+  ],
+  "h_M_W_A": [
+    "λ_AWM",
+    "λ_WAM"
+  ],
+  "h_M_W_H": [
+    "λ_HWM",
+    "λ_WHM"
+  ],
+  "h_M_W_I": [
+    "λ_IWM",
+    "λ_WIM"
+  ],
+  "h_M_W_P": [
+    "λ_PWM",
+    "λ_WPM"
+  ],
+  "h_M_W_R": [
+    "λ_RWM",
+    "λ_WRM"
+  ],
+  "h_M_W_T": [
+    "λ_TWM",
+    "λ_WTM"
+  ],
+  "h_R_H_A": [
+    "λ_ARH",
+    "λ_HRA",
+    "λ_RHA"
+  ],
+  "h_R_H_P": [
+    "λ_HRP",
+    "λ_PRH",
+    "λ_RHP"
+  ],
+  "h_R_P_A": [
+    "λ_ARP",
+    "λ_PRA",
+    "λ_RPA"
+  ],
+  "h_S_F_A": [
+    "λ_AFS",
+    "λ_FAS"
+  ],
+  "h_S_F_H": [
+    "λ_FHS",
+    "λ_HFS"
+  ],
+  "h_S_F_I": [
+    "λ_FIS",
+    "λ_IFS"
+  ],
+  "h_S_F_P": [
+    "λ_FPS",
+    "λ_PFS"
+  ],
+  "h_S_F_R": [
+    "λ_FRS",
+    "λ_RFS"
+  ],
+  "h_S_F_T": [
+    "λ_FTS",
+    "λ_TFS"
+  ],
+  "h_S_F_W": [
+    "λ_FWS",
+    "λ_WFS"
+  ],
+  "h_S_H_A": [
+    "λ_AHS",
+    "λ_HAS"
+  ],
+  "h_S_H_P": [
+    "λ_HPS",
+    "λ_PHS"
+  ],
+  "h_S_I_A": [
+    "λ_AIS",
+    "λ_IAS"
+  ],
+  "h_S_I_H": [
+    "λ_HIS",
+    "λ_IHS"
+  ],
+  "h_S_I_P": [
+    "λ_IPS",
+    "λ_PIS"
+  ],
+  "h_S_I_R": [
+    "λ_IRS",
+    "λ_RIS"
+  ],
+  "h_S_P_A": [
+    "λ_APS",
+    "λ_PAS"
+  ],
+  "h_S_R_A": [
+    "λ_ARS",
+    "λ_RAS"
+  ],
+  "h_S_R_H": [
+    "λ_HRS",
+    "λ_RHS"
+  ],
+  "h_S_R_P": [
+    "λ_PRS",
+    "λ_RPS"
+  ],
+  "h_S_T_A": [
+    "λ_ATS",
+    "λ_TAS"
+  ],
+  "h_S_T_H": [
+    "λ_HTS",
+    "λ_THS"
+  ],
+  "h_S_T_I": [
+    "λ_ITS",
+    "λ_TIS"
+  ],
+  "h_S_T_P": [
+    "λ_PTS",
+    "λ_TPS"
+  ],
+  "h_S_T_R": [
+    "λ_RTS",
+    "λ_TRS"
+  ],
+  "h_S_W_A": [
+    "λ_AWS",
+    "λ_WAS"
+  ],
+  "h_S_W_H": [
+    "λ_HWS",
+    "λ_WHS"
+  ],
+  "h_S_W_I": [
+    "λ_IWS",
+    "λ_WIS"
+  ],
+  "h_S_W_P": [
+    "λ_PWS",
+    "λ_WPS"
+  ],
+  "h_S_W_R": [
+    "λ_RWS",
+    "λ_WRS"
+  ],
+  "h_S_W_T": [
+    "λ_TWS",
+    "λ_WTS"
+  ],
+  "h_T_H_A": [
+    "λ_ATH",
+    "λ_HTA",
+    "λ_THA"
+  ],
+  "h_T_H_P": [
+    "λ_HTP",
+    "λ_PTH",
+    "λ_THP"
+  ],
+  "h_T_I_A": [
+    "λ_ATI",
+    "λ_ITA",
+    "λ_TIA"
+  ],
+  "h_T_I_H": [
+    "λ_HTI",
+    "λ_ITH",
+    "λ_TIH"
+  ],
+  "h_T_I_P": [
+    "λ_ITP",
+    "λ_PTI",
+    "λ_TIP"
+  ],
+  "h_T_I_R": [
+    "λ_ITR",
+    "λ_RTI",
+    "λ_TIR"
+  ],
+  "h_T_P_A": [
+    "λ_ATP",
+    "λ_PTA",
+    "λ_TPA"
+  ],
+  "h_T_R_A": [
+    "λ_ATR",
+    "λ_RTA",
+    "λ_TRA"
+  ],
+  "h_T_R_H": [
+    "λ_HTR",
+    "λ_RTH",
+    "λ_TRH"
+  ],
+  "h_T_R_P": [
+    "λ_PTR",
+    "λ_RTP",
+    "λ_TRP"
+  ],
+  "h_W_H_A": [
+    "λ_AWH",
+    "λ_HWA",
+    "λ_WHA"
+  ],
+  "h_W_H_P": [
+    "λ_HWP",
+    "λ_PWH",
+    "λ_WHP"
+  ],
+  "h_W_I_A": [
+    "λ_AWI",
+    "λ_IWA",
+    "λ_WIA"
+  ],
+  "h_W_I_H": [
+    "λ_HWI",
+    "λ_IWH",
+    "λ_WIH"
+  ],
+  "h_W_I_P": [
+    "λ_IWP",
+    "λ_PWI",
+    "λ_WIP"
+  ],
+  "h_W_I_R": [
+    "λ_IWR",
+    "λ_RWI",
+    "λ_WIR"
+  ],
+  "h_W_P_A": [
+    "λ_AWP",
+    "λ_PWA",
+    "λ_WPA"
+  ],
+  "h_W_R_A": [
+    "λ_AWR",
+    "λ_RWA",
+    "λ_WRA"
+  ],
+  "h_W_R_H": [
+    "λ_HWR",
+    "λ_RWH",
+    "λ_WRH"
+  ],
+  "h_W_R_P": [
+    "λ_PWR",
+    "λ_RWP",
+    "λ_WRP"
+  ],
+  "h_W_T_A": [
+    "λ_AWT",
+    "λ_TWA",
+    "λ_WTA"
+  ],
+  "h_W_T_H": [
+    "λ_HWT",
+    "λ_TWH",
+    "λ_WTH"
+  ],
+  "h_W_T_I": [
+    "λ_IWT",
+    "λ_TWI",
+    "λ_WTI"
+  ],
+  "h_W_T_P": [
+    "λ_PWT",
+    "λ_TWP",
+    "λ_WTP"
+  ],
+  "h_W_T_R": [
+    "λ_RWT",
+    "λ_TWR",
+    "λ_WTR"
+  ]
+}

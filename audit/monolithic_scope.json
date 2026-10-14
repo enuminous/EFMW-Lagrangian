@@ -1,0 +1,614 @@
+[
+  {
+    "id": "ME-001",
+    "heading": "1. EFMW unity functional — framework summary [index notation]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-002",
+    "heading": "2. Original EFMW scalar field equation [corpus equation]",
+    "status": "CONVENTION_OR_DYNAMICS_DIFFERENCE",
+    "reason": "ME-002 includes alpha-dependent time dynamics and ME-004 uses (+---); C1 freezes (-+++) and does not silently identify the branches."
+  },
+  {
+    "id": "ME-003",
+    "heading": "3. Scalar d’Alembertian of φ [standard operator used by EFMW]",
+    "status": "OPERATOR_COMPATIBLE",
+    "reason": "Covariant scalar d'Alembertian definition, with C1 signature fixed separately."
+  },
+  {
+    "id": "ME-004",
+    "heading": "4. Flat-spacetime expansion of the d’Alembertian [operator expansion]",
+    "status": "CONVENTION_OR_DYNAMICS_DIFFERENCE",
+    "reason": "ME-002 includes alpha-dependent time dynamics and ME-004 uses (+---); C1 freezes (-+++) and does not silently identify the branches."
+  },
+  {
+    "id": "ME-005",
+    "heading": "5. Expanded original EFMW scalar equation [derived expansion]",
+    "status": "CONVENTION_OR_DYNAMICS_DIFFERENCE",
+    "reason": "ME-002 includes alpha-dependent time dynamics and ME-004 uses (+---); C1 freezes (-+++) and does not silently identify the branches."
+  },
+  {
+    "id": "ME-006",
+    "heading": "6. Wright informational tensor [core construct; general form]",
+    "status": "UNDERDEFINED_TENSOR",
+    "reason": "Recursive R_mu_nu is not identified with a variational stress; C1 derives its stress from U."
+  },
+  {
+    "id": "ME-007",
+    "heading": "7. EFMW-modified Einstein equation [derived gravitational extension]",
+    "status": "UNDERDEFINED_TENSOR",
+    "reason": "Recursive R_mu_nu is not identified with a variational stress; C1 derives its stress from U."
+  },
+  {
+    "id": "ME-008",
+    "heading": "8. Expanded EFMW unity field equation [working canonical synthesis]",
+    "status": "UNDERDEFINED_TENSOR",
+    "reason": "Recursive R_mu_nu is not identified with a variational stress; C1 derives its stress from U."
+  },
+  {
+    "id": "ME-009",
+    "heading": "9. EFMW action principle [working formalization]",
+    "status": "COMPONENT_COMPATIBLE",
+    "reason": "Action architecture / canonical component matches after a consistent (-+++) convention; not a proof of full source equivalence."
+  },
+  {
+    "id": "ME-010",
+    "heading": "10. Scalar-field Lagrangian [standardized EFMW component]",
+    "status": "COMPONENT_COMPATIBLE",
+    "reason": "Action architecture / canonical component matches after a consistent (-+++) convention; not a proof of full source equivalence."
+  },
+  {
+    "id": "ME-011",
+    "heading": "11. Recursive observer coupling Lagrangian [working hypothesis]",
+    "status": "ADDITIONAL_MODEL_REQUIRED",
+    "reason": "Recursive or semiclassical quantities are not fully specified as C1 fields and couplings."
+  },
+  {
+    "id": "ME-012",
+    "heading": "12. Electromagnetic sector [standard Maxwell component]",
+    "status": "COMPONENT_COMPATIBLE",
+    "reason": "Action architecture / canonical component matches after a consistent (-+++) convention; not a proof of full source equivalence."
+  },
+  {
+    "id": "ME-013",
+    "heading": "13. EFMW quantum-gravity action [derived extension]",
+    "status": "ADDITIONAL_MODEL_REQUIRED",
+    "reason": "Recursive or semiclassical quantities are not fully specified as C1 fields and couplings."
+  },
+  {
+    "id": "ME-014",
+    "heading": "14. Quantum-corrected EFMW field equation [working quantum-gravity form]",
+    "status": "ADDITIONAL_MODEL_REQUIRED",
+    "reason": "Recursive or semiclassical quantities are not fully specified as C1 fields and couplings."
+  },
+  {
+    "id": "ME-015",
+    "heading": "15. Scalar stress-energy tensor [derived]",
+    "status": "COMPONENT_COMPATIBLE",
+    "reason": "Action architecture / canonical component matches after a consistent (-+++) convention; not a proof of full source equivalence."
+  },
+  {
+    "id": "ME-016",
+    "heading": "16. Complex field polar decomposition [quantum/cognitive representation]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-017",
+    "heading": "17. Quantum probability density [standard consequence]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-018",
+    "heading": "18. Phase-current relation [derived]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-019",
+    "heading": "19. Continuity equation [standard/EFMW-compatible]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-020",
+    "heading": "20. Quantum Hamilton–Jacobi form [standard Madelung-type decomposition]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-021",
+    "heading": "21. Quantum potential [standard derived construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-022",
+    "heading": "22. EFMW recursive state equation [working system kernel]",
+    "status": "DISSIPATIVE_OR_DRIVEN_EXTENSION",
+    "reason": "Requires separately defined environmental, noise, constitutive, or nonconservative dynamics."
+  },
+  {
+    "id": "ME-023",
+    "heading": "23. Self-model evolution equation [working system kernel]",
+    "status": "DISSIPATIVE_OR_DRIVEN_EXTENSION",
+    "reason": "Requires separately defined environmental, noise, constitutive, or nonconservative dynamics."
+  },
+  {
+    "id": "ME-024",
+    "heading": "24. Coherence order-parameter equation [working five-claim kernel]",
+    "status": "DISSIPATIVE_OR_DRIVEN_EXTENSION",
+    "reason": "Requires separately defined environmental, noise, constitutive, or nonconservative dynamics."
+  },
+  {
+    "id": "ME-025",
+    "heading": "25. Coherence potential [derived]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-026",
+    "heading": "26. Recursive closure functional [working definition]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-027",
+    "heading": "27. State-model divergence [control metric]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-028",
+    "heading": "28. EFMW control-loss warning criterion [commercial pilot hypothesis]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-029",
+    "heading": "29. Detection lead time [benchmark quantity]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-030",
+    "heading": "30. Compute-normalized warning utility [working benchmark]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-031",
+    "heading": "31. Identity-attractor condition [computational cognition]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-032",
+    "heading": "32. Perturbation recovery criterion [robustness test]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-033",
+    "heading": "33. Largest Lyapunov exponent criterion [dynamical stability]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-034",
+    "heading": "34. Phrase entropy [identity-attractor metric]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-035",
+    "heading": "35. Attractor basin size [replication metric]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-036",
+    "heading": "36. Coupled thinking-puddle equation for system field S [corpus extension]",
+    "status": "DISSIPATIVE_OR_DRIVEN_EXTENSION",
+    "reason": "Requires separately defined environmental, noise, constitutive, or nonconservative dynamics."
+  },
+  {
+    "id": "ME-037",
+    "heading": "37. Coupled thinking-puddle equation for observer field O [corpus extension]",
+    "status": "DISSIPATIVE_OR_DRIVEN_EXTENSION",
+    "reason": "Requires separately defined environmental, noise, constitutive, or nonconservative dynamics."
+  },
+  {
+    "id": "ME-038",
+    "heading": "38. Cognitive pressure parameter [corpus construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-039",
+    "heading": "39. Cognitive curvature equation [working tensor analogy]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-040",
+    "heading": "40. Thought-density stress tensor [working construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-041",
+    "heading": "41. Phi constant [mathematical constant]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-042",
+    "heading": "42. Scalar-23 phi coefficient [construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-043",
+    "heading": "43. Scalar-46 phi coefficient [construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-044",
+    "heading": "44. Phi-13 veto coefficient [construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-045",
+    "heading": "45. Phase synchronization relation [corpus/computational construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-046",
+    "heading": "46. Phi-tiled coherence operator [working abstraction]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-047",
+    "heading": "47. Recursive coherence score [working metric]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-048",
+    "heading": "48. Recursive integrity [working metric]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-049",
+    "heading": "49. Contextual coherence metric [corpus-adjacent construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-050",
+    "heading": "50. Entropic harmony gradient [corpus-adjacent construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-051",
+    "heading": "51. Emergence force equation [working formalization]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-052",
+    "heading": "52. Alternative emergence-force form [working process form]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-053",
+    "heading": "53. Fifth-force coupling [hypothetical physical extension]",
+    "status": "PHYSICAL_IDENTIFICATION_OPEN",
+    "reason": "Rotation, matter coupling, or cosmological ansatz is not determined by C1."
+  },
+  {
+    "id": "ME-054",
+    "heading": "54. Modified geodesic equation [derived fifth-force form]",
+    "status": "PHYSICAL_IDENTIFICATION_OPEN",
+    "reason": "Rotation, matter coupling, or cosmological ansatz is not determined by C1."
+  },
+  {
+    "id": "ME-055",
+    "heading": "55. Residual universal rotation vector [cosmological construct]",
+    "status": "PHYSICAL_IDENTIFICATION_OPEN",
+    "reason": "Rotation, matter coupling, or cosmological ansatz is not determined by C1."
+  },
+  {
+    "id": "ME-056",
+    "heading": "56. Rotating-universe Friedmann extension [working hypothesis]",
+    "status": "PHYSICAL_IDENTIFICATION_OPEN",
+    "reason": "Rotation, matter coupling, or cosmological ansatz is not determined by C1."
+  },
+  {
+    "id": "ME-057",
+    "heading": "57. Expanded effective cosmic density [Thor-related construct]",
+    "status": "PHYSICAL_IDENTIFICATION_OPEN",
+    "reason": "Rotation, matter coupling, or cosmological ansatz is not determined by C1."
+  },
+  {
+    "id": "ME-058",
+    "heading": "58. Cosmic deviation parameter [construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-059",
+    "heading": "59. Collapse-Ω functional [working generalized form]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-060",
+    "heading": "60. Collapse-Ω state update [working form]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-061",
+    "heading": "61. Collapse probability [Born-compatible form]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-062",
+    "heading": "62. Red Queen equation [working adaptive recursion law]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-063",
+    "heading": "63. Red Queen equilibrium condition [derived]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-064",
+    "heading": "64. LOGOS recursion equation [symbolic construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-065",
+    "heading": "65. Observer-observed closure [central EFMW relation]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-066",
+    "heading": "66. Dyadic cognition state [human-AI construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-067",
+    "heading": "67. Cognitive tensor [working general form]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-068",
+    "heading": "68. Recursive cognitive stress tensor [derived construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-069",
+    "heading": "69. Cognitive attractor equation [working construct]",
+    "status": "DISSIPATIVE_OR_DRIVEN_EXTENSION",
+    "reason": "Requires separately defined environmental, noise, constitutive, or nonconservative dynamics."
+  },
+  {
+    "id": "ME-070",
+    "heading": "70. Cognitive attractor potential [working form]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-071",
+    "heading": "71. Axiomatic superposition memory [working construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-072",
+    "heading": "72. Recursive memory validation [working construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-073",
+    "heading": "73. ChronoLogos reversible evolution [working construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-074",
+    "heading": "74. ChronoLogos involution condition [working construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-075",
+    "heading": "75. Emergent time relation [working EFMW formulation]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-076",
+    "heading": "76. Emergent time accumulation [derived form]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-077",
+    "heading": "77. Generalized relativistic Navier–Stokes equation for a compressible thixotropic superfluid [working EFMW extension]",
+    "status": "DISSIPATIVE_OR_DRIVEN_EXTENSION",
+    "reason": "Requires separately defined environmental, noise, constitutive, or nonconservative dynamics."
+  },
+  {
+    "id": "ME-078",
+    "heading": "78. Thixotropic viscosity law [working constitutive relation]",
+    "status": "DISSIPATIVE_OR_DRIVEN_EXTENSION",
+    "reason": "Requires separately defined environmental, noise, constitutive, or nonconservative dynamics."
+  },
+  {
+    "id": "ME-079",
+    "heading": "79. Neutron-decay density evolution [working construct]",
+    "status": "DISSIPATIVE_OR_DRIVEN_EXTENSION",
+    "reason": "Requires separately defined environmental, noise, constitutive, or nonconservative dynamics."
+  },
+  {
+    "id": "ME-080",
+    "heading": "80. Compressible continuity equation [standard fluid relation]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-081",
+    "heading": "81. Stress tensor for the thixotropic fluid [working extension]",
+    "status": "DISSIPATIVE_OR_DRIVEN_EXTENSION",
+    "reason": "Requires separately defined environmental, noise, constitutive, or nonconservative dynamics."
+  },
+  {
+    "id": "ME-082",
+    "heading": "82. Thixotropic relaxation equation [working constitutive model]",
+    "status": "DISSIPATIVE_OR_DRIVEN_EXTENSION",
+    "reason": "Requires separately defined environmental, noise, constitutive, or nonconservative dynamics."
+  },
+  {
+    "id": "ME-083",
+    "heading": "83. Base-888 recursive state [symbolic construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-084",
+    "heading": "84. Base-888 toroidal mapping [working construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-085",
+    "heading": "85. Scalar-23 recursion operator [working construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-086",
+    "heading": "86. Null-rebirth transition [working construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-087",
+    "heading": "87. Null-pair algebra [working construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-088",
+    "heading": "88. Recursive rebirth operator [working construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-089",
+    "heading": "89. Recursive risk functional [working construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-090",
+    "heading": "90. Legal coherence functional [working construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-091",
+    "heading": "91. Network coherence synchronization [working construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-092",
+    "heading": "92. Information divergence [standard metric]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-093",
+    "heading": "93. Mutual information [standard information theory]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-094",
+    "heading": "94. Recursive evidence accumulation [working construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-095",
+    "heading": "95. Recursive confidence update [working construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-096",
+    "heading": "96. Recursive convergence criterion [working construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-097",
+    "heading": "97. AI constitutional constraint [working ethical functional]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-098",
+    "heading": "98. Recursive ethical weighting [working construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-099",
+    "heading": "99. Consciousness hypothesis metric [working hypothesis]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-100",
+    "heading": "100. Conscious recursive attractor condition [working hypothesis]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-101",
+    "heading": "101. Recursive identity persistence [working construct]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  },
+  {
+    "id": "ME-102",
+    "heading": "102. EFMW pilot falsification criterion [benchmark equation]",
+    "status": "OUT_OF_SCOPE",
+    "reason": "A separate definition, computational model, metric, or physical extension; not a C1 Euler-Lagrange equation."
+  }
+]
