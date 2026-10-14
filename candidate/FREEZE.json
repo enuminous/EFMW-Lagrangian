@@ -1,0 +1,12 @@
+{
+  "candidate": "EFMW-LAGRANGIAN-C1",
+  "version": "1.0.0",
+  "rule": "A changed locked file requires a new version; historical source hashes are verified separately.",
+  "sha256": {
+    "candidate/CANDIDATE.md": "e7f58e6ec06ad6bb14c09e0482780d8d8c0bf8c4c0beb117757f65d44790d08f",
+    "candidate/conventions.json": "667f38db79deea961787fa4d19a79f6e4231f79c32a5ca2ea7e4e9faa22e798e",
+    "src/efmw_audit/model.py": "bf4c9b3712f98876272b83ae72e9dacc18af4af2d3c6c0a08ba67c563e0998f9",
+    "src/efmw_audit/polynomial.py": "a6da4a5f879f65cb6cba4813353b67c0713ee45b2e2c6cf30ad9f5e7cc8f8210",
+    "src/efmw_audit/catalogue.py": "84246f9bba4e7d0f3a4b4a3d968fbda537e0faf5d89e121e12e29243ea9a2486"
+  }
+}
