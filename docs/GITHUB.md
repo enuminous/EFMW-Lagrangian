@@ -1,10 +1,13 @@
-# Publish the prepared project
+# GitHub verification and publication
 
-1. Create an empty GitHub repository, for example `enuminous/EFMW-Lagrangian-Audit`.
-2. Extract the ZIP. Upload the contents of its `EFMW-Lagrangian-Audit` directory, including `.github/workflows/verify.yml`.
-3. Wait for the **Verify candidate and Lean certificates** workflow. A local build record is not a substitute for this first remote run.
-4. For the dashboard, select **Settings → Pages → Deploy from a branch → main → /(root)**, then save.
+The repository is [enuminous/EFMW-Lagrangian](https://github.com/enuminous/EFMW-Lagrangian).
 
-The dashboard and relative links are independent of the eventual repository name. Do not change the frozen candidate to remove failures. A revised model must have a new version, source comparison and build record.
+1. Push a revision, open a pull request, or choose **Run workflow** under [Verify candidate and Lean certificates](https://github.com/enuminous/EFMW-Lagrangian/actions/workflows/verify.yml).
+2. Inspect that workflow's result for the exact commit. A local build record or successful Pages deployment is not a substitute for the remote verification run.
+3. Open the run summary and download `verification-<commit>-<attempt>` for fresh stage logs, `build_status.json`, and `ci_environment.json`. Artifacts are retained for 90 days.
+4. Require all verifier stages and the deterministic-regeneration check to pass. A failed stage must be diagnosed; do not change the frozen candidate to remove failures. A revised model needs a new version, source comparison, and build record.
+5. Pages can independently serve the dashboard from **Settings → Pages → Deploy from a branch → main → /(root)**. The dashboard and relative links also work offline.
 
-This archive was prepared without creating, pushing or publishing a remote repository. No GitHub account token is needed to reproduce the local mathematical audit.
+For a new source ZIP, rerun verification and the packaging commands in [REPRODUCIBILITY.md](REPRODUCIBILITY.md). The historical authoring logs disclose their explicit-path launcher; GitHub CI uses ordinary upstream elan, Lake, and Lean. No GitHub token is needed to reproduce the mathematical audit locally.
+
+Keep [FORMAL_SCOPE.md](FORMAL_SCOPE.md) and [PHYSICAL_OBLIGATIONS.md](PHYSICAL_OBLIGATIONS.md) visible. Successful finite polynomial verification does not establish full continuum variation, PDE existence, or physical validity.

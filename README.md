@@ -1,5 +1,7 @@
 # EFMW Lagrangian Audit
 
+[![Verify candidate and Lean certificates](https://github.com/enuminous/EFMW-Lagrangian/actions/workflows/verify.yml/badge.svg)](https://github.com/enuminous/EFMW-Lagrangian/actions/workflows/verify.yml)
+
 **Frozen candidate C1 · Full 165-triplet comparison · Lean 4.28.0**
 
 This project derives and audits a proposed effective Lagrangian for the 11-sector EFMW FieldSpace catalogue. It preserves the original sources, records every change of convention, and compares all **585 displayed statements** against the candidate's actual variations.
@@ -16,7 +18,8 @@ The included verification record distinguishes successful finite Lean proofs fro
 - [Continuum derivation](docs/DERIVATION.md)
 - [What Lean proves](docs/FORMAL_SCOPE.md)
 - [Physical obligations and counterexamples](docs/PHYSICAL_OBLIGATIONS.md)
-- [Build status](verification/build_status.json)
+- [GitHub verification runs](https://github.com/enuminous/EFMW-Lagrangian/actions/workflows/verify.yml)
+- [Historical local build status](verification/build_status.json)
 - [Every source statement](audit/equations.csv)
 
 ## Audit outcome
@@ -54,7 +57,7 @@ lake env leanchecker -v EFMWLagrangian
 python3 scripts/check_axiom_guard.py
 ```
 
-The original authoring environment required an explicit-path launcher for Lean's executable autodetection. It used the unmodified upstream frontend and kernel libraries. The included build status discloses that route; normal GitHub Actions uses the standard launcher. See [reproducibility](docs/REPRODUCIBILITY.md).
+The original authoring environment required an explicit-path launcher for Lean's executable autodetection. It used the unmodified upstream frontend and kernel libraries. The committed build status preserves that historical route. GitHub Actions runs the same verifier with the standard upstream launcher and uploads fresh, commit-specific logs and status as an artifact. See [reproducibility](docs/REPRODUCIBILITY.md).
 
 ## Formal scope
 
@@ -64,9 +67,9 @@ Lean checks finite formal polynomials. The source parser, continuum variational 
 
 ## GitHub use
 
-Create a repository such as `EFMW-Lagrangian-Audit` and upload this directory's contents. The included `.github/workflows/verify.yml` will run the build and audit. To serve the dashboard, enable GitHub Pages from the main branch's root. The dashboard has no external assets and also opens locally.
+The project is published at [enuminous/EFMW-Lagrangian](https://github.com/enuminous/EFMW-Lagrangian). The [verification workflow](.github/workflows/verify.yml) runs on pushes, pull requests, and manual dispatch. It builds from scratch on GitHub-hosted Ubuntu 24.04 using Lean 4.28.0 from `lean-toolchain`; neither Mathlib nor compiled-proof caches are used.
 
-This archive has not itself been published to a remote repository. The [publication checklist](docs/GITHUB.md) gives the exact steps and states what must remain visible.
+Select a successful **Verify candidate and Lean certificates** run for the revision being reviewed and download its `verification-<commit>-<attempt>` artifact. A successful Pages deployment is a separate result and does not establish Lean verification. See the [GitHub checklist](docs/GITHUB.md). The dashboard has no external assets and also opens locally.
 
 ## Provenance and rights
 

@@ -10,6 +10,16 @@ The proof of a normalized scalar magnitude equality is conditional on the explic
 
 The complete verifier produces individual logs and a build_status.json that records exit codes, the launcher route, theorem counts, and hashes of Lean source files. A failed stage yields overall FAIL. It never reports a generated-but-uncompiled proof as verified.
 
+## GitHub Actions portability gate
+
+[Verify candidate and Lean certificates](https://github.com/enuminous/EFMW-Lagrangian/actions/workflows/verify.yml) runs the canonical verifier on pushes, pull requests, and manual dispatch. The job uses GitHub-hosted Ubuntu 24.04, Python 3.12, a checksum-pinned elan 4.2.4 installer, and the standard Lean 4.28.0 toolchain named in `lean-toolchain`. Actions are pinned to commit SHAs. No external Lean packages or compiled-proof caches are restored.
+
+Every run checks the candidate lock and historical source blobs, regenerates all audit rows and certificate inputs, runs Python regressions, compiles Lean, audits transitive axioms, invokes `leanchecker`, and runs the deliberate-failure tests. A final comparison rejects drift in the tracked audit data, proof sources, frozen definitions, or toolchain configuration. A failure remains a failed workflow; uploading logs does not turn it into a pass.
+
+The committed `verification/build_status.json` and logs remain the historical authoring record. CI clears those outputs in its disposable checkout before setup, then uploads only its fresh status and logs, plus source manifests, in `verification-<commit>-<attempt>`. `ci_environment.json` identifies the checked-out commit, run URL, attempt, toolchain, and runner. Artifacts are retained for 90 days; the Actions run and its exact commit are the evidence of the remote result. If setup fails before verification, no historical PASS is presented as a new result.
+
+The job has read-only repository permissions and never commits regenerated evidence. Pages deployment is separate from this mathematical verification. A green run establishes reproducibility of the finite certificate layer with the standard launcher, not independent empirical validation or a continuum theorem.
+
 ## Authoring-environment compatibility
 
 The ordinary installed Lean executable attempts to read `/proc/<pid>/exe`; that numbered path was unavailable in the authoring environment. Lake itself supported an explicit toolchain location. A separate C launcher used the public Lean initialization/search-path/frontend entry points with a caller-supplied library root. The compiler and kernel shared libraries were not modified.
