@@ -1,5 +1,13 @@
 # EFMW Lagrangian Audit
 
+<!-- ENUMINOUS-LIFECYCLE:START -->
+**Lifecycle review — 2026-10-16: duplicate Python source layout; audit remains distinct.**
+
+`catalogue.py`, `model.py` and `polynomial.py` are byte-identical between `src/` and `src/efmw_audit/`. The executed entry point `scripts/audit.py` imports `efmw_audit` from `src`; use `src/efmw_audit/` for ongoing package work. The flat copies are retained as duplicate layout artifacts, not an additional implementation or independent audit. This does not supersede the Lagrangian candidate, its certificates or its separate continuum bridge.
+
+[Portfolio review and evidence](https://github.com/enuminous/EFMW_Post156_Zoo_Audit/blob/main/portfolio/REPOSITORY_LIFECYCLE_2026-10-16.md).
+<!-- ENUMINOUS-LIFECYCLE:END -->
+
 [![Verify candidate and Lean certificates](https://github.com/enuminous/EFMW-Lagrangian/actions/workflows/verify.yml/badge.svg)](https://github.com/enuminous/EFMW-Lagrangian/actions/workflows/verify.yml)
 
 **Frozen candidate C1 · Full 165-triplet comparison · Lean 4.28.0**
