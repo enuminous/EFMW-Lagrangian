@@ -1,5 +1,31 @@
 # EFMW Lagrangian Audit
 
+<!-- ENUMINOUS-UNIFIED-NAV:START -->
+## Repository navigation
+
+**eNuminous network:** [All public repositories](https://github.com/enuminous/EFMW/blob/main/REPOSITORY_NAVIGATION.md) · [EFMW](https://github.com/enuminous/EFMW) · [102 equations](https://github.com/enuminous/Monolithic_102_EFMW) · [Frozen Lean](https://github.com/enuminous/Monolithic-102-Zoo-Lean4) · [Zoo](https://github.com/enuminous/Tortoise) · [Papers](https://github.com/enuminous/papers) · [Quantum geometry](https://github.com/enuminous/Base888-Quantum-Geometry)
+
+**This project:** [Repository home](https://github.com/enuminous/EFMW-Lagrangian) · [Subject index](https://github.com/enuminous/EFMW/blob/main/REPOSITORY_NAVIGATION.md#core-efmw-and-review)
+
+<details open>
+<summary><strong>On this page</strong></summary>
+
+- [Start here](#start-here)
+- [Audit outcome](#audit-outcome)
+- [Reproduce](#reproduce)
+- [Formal scope](#formal-scope)
+- [GitHub use](#github-use)
+- [Provenance and rights](#provenance-and-rights)
+
+
+</details>
+
+**Related repositories:** [Monolithic-102-Zoo-Lean4](https://github.com/enuminous/Monolithic-102-Zoo-Lean4) · [Cosmology](https://github.com/enuminous/Cosmology) · [EFMW](https://github.com/enuminous/EFMW) · [Quantum-Gravity](https://github.com/enuminous/Quantum-Gravity) · [EFMW-Axioms](https://github.com/enuminous/EFMW-Axioms) · [EFMW-CTX-001b](https://github.com/enuminous/EFMW-CTX-001b) · [efmw-equation-review](https://github.com/enuminous/efmw-equation-review) · [papers](https://github.com/enuminous/papers)
+
+> **Evidence boundary:** A link between projects is navigation, not an assertion of proven equivalence, experimental validation, or shared authorship. See each repository’s own status and review notes.
+<!-- ENUMINOUS-UNIFIED-NAV:END -->
+
+
 <!-- ENUMINOUS-LIFECYCLE:START -->
 **Lifecycle review — 2026-10-16: duplicate Python source layout; audit remains distinct.**
 
