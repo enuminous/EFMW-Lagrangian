@@ -16,6 +16,7 @@
 - [Formal scope](#formal-scope)
 - [GitHub use](#github-use)
 - [Provenance and rights](#provenance-and-rights)
+- [Connected physics research units](#connected-physics-research-units)
 
 
 </details>
@@ -112,3 +113,15 @@ Select a successful **Verify candidate and Lean certificates** run for the revis
 ## Provenance and rights
 
 Prepared for Matthew Chenoweth Wright from his public EFMW sources and the candidate derived in chat on October 13, 2026. See [source manifest](audit/source_manifest.json) for exact blobs and hashes. The underlying equations and scientific claims remain attributed to their source. No repository license has been selected on the owner's behalf; see LICENSE_NOTICE.md.
+
+<!-- ENUMINOUS-RESEARCH-CHAIN:START -->
+## Connected physics research units
+
+**Established-theory reconstructions and baseline laboratories:** [Standard-Model-Reduction](https://github.com/enuminous/Standard-Model-Reduction) · [Higgs-Gauge-Lab](https://github.com/enuminous/Higgs-Gauge-Lab) · [EFMW-Physics-Lab](https://github.com/enuminous/EFMW-Physics-Lab)
+
+**Proposed quantum-geometry bridge:** [Base888-Quantum-Geometry](https://github.com/enuminous/Base888-Quantum-Geometry) · [QST-001](https://github.com/enuminous/Quantum-Gravity/blob/main/QST-001.md) · [QST-002](https://github.com/enuminous/QST/blob/main/QST-002.md)
+
+**EFMW definitions, pressure-cycle model, and spacetime investigations:** [Canonical 102 equations](https://github.com/enuminous/Monolithic_102_EFMW) · [Frozen Lean review](https://github.com/enuminous/Monolithic-102-Zoo-Lean4) · [RHC-001: Rahasya pressure-cycle formalization](https://github.com/enuminous/papers/blob/main/RHC-001-EFMW-Rahasya-Pressure-Cycle-Formalization.md) · [EFMW-Lagrangian](https://github.com/enuminous/EFMW-Lagrangian) · [Cosmology](https://github.com/enuminous/Cosmology)
+
+> **Interpretation:** Cross-links represent research dependencies and comparisons. The Standard Model and continuum gravity are inputs in current QST calculations; their emergence from Base888 and the physical status of the pressure cycle remain **UNRESOLVED**.
+<!-- ENUMINOUS-RESEARCH-CHAIN:END -->
